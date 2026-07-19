@@ -1,4 +1,4 @@
-const freelancerGetAPI = "https://skillora-api-code.case-scheduler-worker.workers.dev/api/freelancer/14";
+const freelancerGetAPI = "https://skillora-api-code.case-scheduler-worker.workers.dev/api/freelancer/16";
 
 
 const nameBox = document.querySelector(".name")
