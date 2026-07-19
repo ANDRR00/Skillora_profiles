@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="personProfile.css">
+</head>
+
+<body>
+    <!-- main ari card titon -->
+    <main>
+        
+        <section class="profileHeader">
+            <div class="personLeft">
+                <div class="profilePicture">
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                        alt="" id="profilePic">
+                </div>
+            </div>
+            <div class="personRight">
+                <div class="personInfo">
+                    <div class="statusTop" style="padding: 0px 8px;">
+                        freelancer
+                    </div>
+                    <div class="infoLower">
+                        <span class="name">name surname</span>
+                        <div class="location">
+                            <img src="realLocation.svg" alt="">
+                            <span style="color: #8894a8;" class="locationSpan">location bla bla bla</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="personAge">
+                    <div class="age" style="color: #8894a8;">age</div>
+                    <span class="ageBox">29</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="profileAbout">
+            <article class="aboutInfo">
+                <p>about me</p>
+                <p class="aboutMe">some info from about api</p>
+            </article>
+            <hr>
+            <div class="resumePortfolioWrapper">
+                <div class="resumePortfolio">
+                    <div class="portfolio">
+                        <span>portfolio</span>
+                        <p><img src="web-svgrepo-com.svg" alt="">
+                            <a href="" class="website">some link for company to go over</a></p>
+                    </div>
+                    <div class="resume">
+                        <span>resume</span>
+                        <button class="resumeDownload"><img src="download.svg" alt="">
+                            download resume</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projectSection">
+            <div class="projectBar">
+                <div class="projectsHeader">
+                    <p>Projects</p>
+                    <span>projects status and count</span>
+                </div>
+                <button class="allProjectsView">View All</button>
+            </div>
+
+            <div class="projects">
+                <div class="projectCard">
+                    <div class="upperCard">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=340&fit=crop&auto=format" alt="">
+                    </div>
+                    <div class="lowerCard">
+                        <div class="projectTitle">
+                            pathcwork CMS
+                        </div>
+                        <div class="projectDetails">
+                            <p class="projectBody">
+                                Headless CMS dashboard for editorial teams. Features real-time collaboration and a custom rich text editor.
+                            </p>
+                            <div class="projectNeeds">
+                                <button class="skill">React</button>
+                                <button class="skill">Figma</button>
+                                <button class="skill">TypeScript</button>
+                            </div>
+                            <button class="projectView">
+                                <img src="open-in-new-svgrepo-com.svg" alt="">
+                                View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <h1></h1>
+
+    <script src="personProfile.js"></script>
+</body>
+
+</html>

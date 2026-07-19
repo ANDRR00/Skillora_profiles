@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.profileHeader{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #1B212B;
+    padding: 35px;
+}
+
+.personLeft{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10%;
+    min-width: 0;
+}
+
+.profilePicture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(160px, 18vw, 300px);
+    border-radius: 50%;
+    border: 1px solid #a77b39;
+    padding: 5px;
+}
+
+.profilePicture img{
+    width: clamp(148px, 17vw, 280px);
+    border-radius: 50%;
+}
+
+.personInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.statusTop{
+    color: #a77b39;
+    font-size: clamp(18px, 2.2vw, 32px);
+}
+
+.infoLower{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.location img{
+    width: 32px;
+}
+
+.personRight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 75%;
+    min-width: 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.name{
+    font-size: clamp(24px, 3vw, 48px);
+    color: rgb(224, 220, 220);
+}
+
+.profileAbout{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    background-color: #efe8d8;
+    padding: 35px;
+}
+
+.aboutInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #8894a8;
+}
+
+.contactWrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+.website, .phone{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    min-width: 50%;
+}
+
+.projectSection{
+    width: 100%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efe8d8;
+}
+
+.projectBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 2px solid #c4923e;
+    padding: 8px;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.projectsHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.projectsHeader p{
+    color:  #b8863b;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.projectsHeader span{
+    color: #8894a8;
+}
+
+.allProjectsView{
+    width: 85px;
+    border: 1px solid #8894a8;
+    color: #8894a8;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.6s ease;
+}
+
+.allProjectsView:hover{
+    color: #efe8d8;
+    background-color: #8894a8;
+}
+
+.projects{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+}
+
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 12px;
+    background-color: #1b212b;
+    overflow: hidden;
+    flex: 1 1 340px;
+    max-width: 380px;
+    min-width: 0;
+}
+
+.upperCard{
+    width: 100%;
+}
+
+.upperCard img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.lowerCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+}
+
+.projectTitle{
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+.projectDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.projectBody{
+    width: 100%;
+}
+
+.projectNeeds{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.skill{
+    background-color: wheat;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.projectView{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 8px 5px;
+    background-color: transparent;
+    color: goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.projectView:hover{
+    background-color: goldenrod;
+    color: #1b212b;
+    border-color: goldenrod;
+}
+
+.projectView img{
+    width: 28px;
+}
+
+/* ============ RESPONSIVE ============ */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .profileHeader{
+        padding: 25px;
+    }
+
+    .profilePicture{
+        width: 220px;
+    }
+
+    .profilePicture img{
+        width: 200px;
+    }
+
+    .personLeft{
+        width: 35%;
+    }
+
+    .personRight{
+        width: 65%;
+    }
+
+    .name{
+        font-size: 36px;
+    }
+
+    .statusTop{
+        font-size: 28px;
+    }
+
+    .contact{
+        width: 60%;
+    }
+}
+
+/* Mobile / tablet portrait */
+@media (max-width: 768px) {
+    .profileHeader{
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px 20px;
+    }
+
+    .personLeft{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .personRight{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .personInfo{
+        align-items: center;
+        text-align: center;
+    }
+
+    .infoLower{
+        align-items: center;
+    }
+
+    .contactWrapper{
+        justify-content: center;
+    }
+
+    .contact{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .profileHeader{
+        padding: 20px 15px;
+    }
+
+    .profilePicture{
+        width: 160px;
+        padding: 3px;
+    }
+
+    .profilePicture img{
+        width: 148px;
+    }
+
+    .personLeft{
+        gap: 0;
+    }
+
+    .statusTop{
+        font-size: 20px;
+        padding: 0px 4px !important;
+    }
+
+    .name{
+        font-size: 26px;
+    }
+
+    .location img{
+        width: 22px;
+    }
+
+    .profileAbout{
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .website, .phone{
+        align-items: center;
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .projectBar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .allProjectsView{
+        width: 100%;
+    }
+
+    .projectCard{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
